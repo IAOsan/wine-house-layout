@@ -1,0 +1,16 @@
+.btn {
+   border-radius: 0.3px;
+   &--outline-white {
+      background: transparent;
+      color: white;
+      border: 0.2rem solid #fff;
+   }
+   &--text {
+      &:link,
+      &:visited {
+         display: inline-block;
+         text-decoration: none;
+         border-radius: 0.3px;
+      }
+   }
+}

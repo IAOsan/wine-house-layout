@@ -1,0 +1,27 @@
+nav.navbar
+   a.navbar__logo(href="#") 
+      +imgRespons('navbar__logo-img', 'Logo', 'png', ['logo-xs', '100w'], ['logo', '200w', '5vw', '5vw', '50px'])
+   ul.navbar__list
+      li.navbar__item
+         a.navbar__link(href="#") home
+      li.navbar__item
+         a.navbar__link(href="#") vineyard
+      li.navbar__item
+         a.navbar__link(href="#") grapes
+      li.navbar__item
+         a.navbar__link(href="#") wine
+      li.navbar__item
+         a.navbar__link(href="#") contact
+   .navbar__icon-box 
+      .navbar__icon 
+.navigation__buttons 
+   +imgRespons('navigation__btn navigation__btn--left', 'Navigation button left', 'png', ['arrow-xs', '20w'], ['arrow', '40w', '5vw', '5vw', '20px'])
+   +imgRespons('navigation__btn navigation__btn--right', 'Navigation button left', 'png', ['arrow-xs', '20w'], ['arrow', '40w', '5vw', '5vw', '20px'])
+.navigation__pagination-box 
+   .navigation__pagination-page 1 / 5
+   .navigation__pagination-circles
+      .navigation__pagination-circle.navigation__pagination-circle--1.navigation__pagination-circle--change
+      .navigation__pagination-circle.navigation__pagination-circle--2
+      .navigation__pagination-circle.navigation__pagination-circle--3
+      .navigation__pagination-circle.navigation__pagination-circle--4
+      .navigation__pagination-circle.navigation__pagination-circle--5

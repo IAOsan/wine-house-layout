@@ -1,0 +1,2 @@
+mixin imgRespons(style,name,type,imgs,imgl)
+   img(class=style srcset=`assets/img/${imgs[0]}.${type} ${imgs[1]}, assets/img/${imgl[0]}.${type} ${imgl[1]}` sizes=`(max-width: 56.25em) ${imgl[2]}, (max-width: 37.5em) ${imgl[3]}, ${imgl[4]}` src=`assets/img/${imgl[0]}.${type}`, alt=name)

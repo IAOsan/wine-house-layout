@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: inherit;
+   box-sizing: inherit;
+}
+/* cambiar todas las unidades absolutas de px a REM */
+/* para que seas mas facil los breakpoints */
+/* se usa 10 px para evitar demasiados calculos */
+/* se usa el 100% porque es en relacion al fontsize del navegador que por defecto es 16px */
+/* versiones viejas de iE no soporta rems */
+html {
+   font-size: 62.5%; /* da como resultado 10px en lugar de 16px que es 100% */
+   @include respond(1600) {
+      font-size: calc(62.5% - 10%);
+   }
+   @include respond(1200) {
+      font-size: calc(62.5% - 15%);
+   }
+   @include respond(576) {
+      font-size: calc(62.5% - 20%);
+   }
+}
+
+body {
+   box-sizing: border-box;
+   min-height: 100vh;
+}
+
+img {
+   display: block;
+   width: 100%;
+   height: auto;
+}

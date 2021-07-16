@@ -1,0 +1,23 @@
+include ../abstracts/variables
+include ../abstracts/mixins
+
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      link(rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/1425/1425519.png")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      //- fonts
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet")
+      //- style
+      link(rel="stylesheet", href="css/main.css")
+
+      title Wine House
+   body 
+      include ../blocks/navigation
+      block home
+      //- script 
+      script(src="js/app.js") 
